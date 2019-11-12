@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/apply/apply",
+    "pages/special/special",
+    "pages/maps/maps", 
+    "pages/school/school",
+    "pages/teacher/teacher",    
+    "pages/nine/nine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#606370",
+    "navigationBarTitleText": "蔷薇艺术学校",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "网站首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index2.png"
+      },
+      {
+        "pagePath": "pages/special/special",
+        "text": "课程推荐",
+        "iconPath": "images/icon/time.png",
+        "selectedIconPath": "images/icon/time2.png"
+      },
+      {
+        "pagePath": "pages/apply/apply",
+        "text": "在线报名",
+        "iconPath": "images/icon/bao.png",
+        "selectedIconPath": "images/icon/bao2.png"
+      },
+      {
+        "pagePath": "pages/maps/maps",
+        "text": "联系我们",
+        "iconPath": "images/icon/maps.png",
+        "selectedIconPath": "images/icon/maps2.png"
+      }
+    ]
+  }
+}
