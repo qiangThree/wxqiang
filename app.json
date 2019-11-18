@@ -4,10 +4,11 @@
     "pages/detail/detail",
     "pages/apply/apply",
     "pages/special/special",
-    "pages/maps/maps", 
+    "pages/maps/maps",
     "pages/school/school",
-    "pages/teacher/teacher",    
-    "pages/nine/nine"
+    "pages/teacher/teacher",
+    "pages/nine/nine",
+    "pages/liulist/liulist"
   ],
   "window": {
     "backgroundTextStyle": "light",

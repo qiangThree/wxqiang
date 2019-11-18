@@ -1,0 +1,16 @@
+<view class="liu">
+    <view class="liuyanTit">梦想值多少钱？9.9元圆宝宝一个明星梦</view>
+    <textarea class="textMore" bind:input="change" name="" id="" cols="40" rows="10" placeholder="留言将由公众号筛选后显示，对所有人可见。" value="{{textVal}}"></textarea>
+    <view class="liuBtn {{isTrue?'active':''}}" bind:tap="liuyan">留言</view>
+</view>
+<view class="showList" wx:if="{{liulist.length}}">
+    <view class="showTit">我的留言</view>
+    <view class="every" wx:for="{{liulist}}" wx:key="{{index}}">
+        <open-data class="userImg" type="userAvatarUrl"></open-data>
+        <view class="everyRight">
+            <open-data class="userName" type="userNickName"></open-data>
+            <text>{{item}}</text>
+            <view class="delete" data-index="{{index}}" bind:tap="delete">删除</view>
+        </view>
+    </view>
+</view>
