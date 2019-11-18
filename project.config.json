@@ -12,10 +12,15 @@
 		"coverView": true,
 		"autoAudits": false,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
 =======
 >>>>>>> five
+=======
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+>>>>>>> six
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -27,7 +32,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.0",
+<<<<<<< HEAD
 	"appid": "wxc469ebd000280fde",
+=======
+	"appid": "wx8d6dabe73e6f3e05",
+>>>>>>> six
 	"projectname": "qiangwei",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -58,10 +67,14 @@
 		},
 		"miniprogram": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> six
 			"current": -1,
 			"list": [
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/apply/apply",
 					"pathName": "pages/apply/apply",
 =======
@@ -80,11 +93,16 @@
 <<<<<<< HEAD
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
+=======
+					"name": "pages/special/special",
+					"pathName": "pages/special/special",
+>>>>>>> six
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
 					"query": "id=0",
@@ -92,6 +110,10 @@
 					"name": "liuyan",
 					"pathName": "pages/liulist/liulist",
 >>>>>>> five
+=======
+					"name": "pages/maps/maps",
+					"pathName": "pages/maps/maps",
+>>>>>>> six
 					"scene": null
 				}
 			]

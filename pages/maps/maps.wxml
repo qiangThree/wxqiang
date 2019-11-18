@@ -1,2 +1,27 @@
-<!--pages/maps/maps.wxml-->
-<text>pages/maps/maps.wxml</text>
+<view class="map">
+    <image src="/images/maps.png" />
+</view>
+
+<view class="txt1">
+    <view class="tit" catchtap="showMap">
+        <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/go.png" />
+        <view>地图导航</view>
+    </view>
+    <view class="tit" open-type='contact' session-from='weapp'>
+        <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/we_in.png" />
+        <view>在线查询</view>
+    </view>
+</view>
+
+<block wx:for="{{dataz}}" wx:key="index">
+    <view class="txt2">
+        <image src="{{item.img}}" />
+        <view class="{{index==3?'titx':''}}">{{item.name}}</view>
+        <view hidden="{{index==0?show:!show}}" catchtap="goTal">点击拨打</view>
+    </view>
+</block>
+
+<view class="goTal" catchtap="goTal">
+    <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/zzz.png" />
+    <view>蔷薇艺术学院</view>
+</view>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .outBox{
 	width: 750rpx;
 	min-height: 100rpx;
@@ -35,3 +36,13 @@
 	width: 95%;
 	height: 400rpx;
 }
+=======
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+>>>>>>> six
