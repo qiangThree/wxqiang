@@ -11,12 +11,10 @@ Page({
   showMap(){
     wx.getLocation({
       type: 'gcj02',
-      success (res) {
-        const latitude = 35.026674
-        const longitude = 118.439751
+      success: (res)=> {
         wx.openLocation({
-          latitude,
-          longitude,
+          latitude:35.026674,
+          longitude:118.439751,
           scale: 24
         })
       }
