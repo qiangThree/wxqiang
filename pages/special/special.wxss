@@ -1,1 +1,54 @@
 /* pages/special/special.wxss */
+page{
+    width:100%;
+    height:100%;
+    background:#eee;
+}
+.box{
+    width:700rpx;
+    margin:0 0 0 25rpx;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box .boxz{
+    width:340rpx;
+    height:250rpx;
+    margin-top:20rpx;
+}
+.box .boxz image{
+    width:100%;
+    height:190rpx;
+    vertical-align:top;
+}
+.box .boxz view{
+    width:100%;
+    line-height:60rpx;
+    font-size:24rpx; 
+    text-align:center;
+    background:white;
+}
+.load{
+    width:300rpx;
+    margin:20rpx auto 0;
+    background:#ccc;
+    text-align:center;
+    line-height:70rpx;
+    font-size:26rpx;
+    color:white;
+}
+.goTal{
+    margin:20rpx auto 0;
+    display:flex;
+    justify-content: center;
+}
+.goTal image{
+    width:30rpx;
+    height:30rpx;
+}
+.goTal view{
+    line-height:30rpx;
+    font-size:20rpx;
+    padding-left:10rpx;
+    color:#aaa;
+}

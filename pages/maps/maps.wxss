@@ -1,1 +1,83 @@
 /* pages/maps/maps.wxss */
+page{
+    width:100%;
+    height:100%;
+    background:#eee;
+}
+.goTal{
+    margin:20rpx auto 0;
+    display:flex;
+    justify-content: center;
+}
+.goTal image{
+    width:30rpx;
+    height:30rpx;
+}
+.goTal view{
+    line-height:30rpx;
+    font-size:20rpx;
+    padding-left:10rpx;
+    color:#aaa;
+}
+.map{
+    width:100%;
+    height:450rpx;
+    border-bottom:1rpx solid #ccc;
+}
+.map image{
+    width:100%;
+    height:100%;
+}
+.txt1{
+    width:700rpx;
+    height:80rpx;
+    margin:30rpx auto 0;
+    display:flex;
+    justify-content: space-between;
+}
+.txt1 .tit{
+    width:300rpx;
+    height:100%;
+    background:#545454;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.txt1 .tit image{
+    width:50rpx;
+    height:50rpx;
+}
+.txt1 .tit view{
+    font-size:24rpx;
+    color:white;
+    padding-left:10rpx;
+}
+.txt2{
+    width:700rpx;
+    height:80rpx;
+    box-sizing:border-box;
+    border:2rpx solid #545454;
+    margin: 30rpx auto 0;
+    word-wrap: break-word;word-break: break-all;
+    
+}
+.txt2 image{
+    width:50rpx;
+    height:50rpx;
+    float:left;
+    margin:15rpx 0 0 15rpx;
+}
+.txt2 view{
+    float:left;
+    line-height:80rpx;
+    font-size:30rpx;
+    padding-left:20rpx;
+}
+.txt2 .titx{
+    width:85%;
+    line-height:40rpx;
+}
+.txt2 view:nth-child(3){
+    float:right;
+    margin-right:20rpx;
+}

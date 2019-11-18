@@ -1,23 +1,45 @@
-// pages/special/special.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
-  },
-
-  /**
-   * 组件的初始数据
-   */
+// var aaa = require('../../data.js')
+Page({
   data: {
-
+    show:false
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  goTal(){
+    wx.makePhoneCall({
+      phoneNumber: '03123688777',
+    })
+  },
+  loading(){
+    this.setData({show: true});
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading',
+      duration:1500
+    })
+    setTimeout(() => {
+      this.setData({show : false});
+    },1500);
+  },
+  godel(e){
+    console.log(e.currentTarget.dataset.id)
+    wx.navigateTo({
+      url: '/pages/detail/detail?id='+e.currentTarget.dataset.id
+    })
+  },
+  onLoad: function (options) {
+    // this.setData({
+    //   dataz:aaa.postJson.recommend.datas
+    // })
+    // console.log(this.data.dataz)
+    wx.request({
+      url: 'http://192.168.32.114:8800/recommend',
+      data: {},
+      method: 'POST',
+      success: (res)=>{
+        this.setData({
+          dataz:res.data.recommend.datas
+        })
+      }
+    })
   }
 })

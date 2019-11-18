@@ -1,2 +1,22 @@
-<!--pages/special/special.wxml-->
-<text>pages/special/special.wxml</text>
+<!-- <view class="box" hidden="{{show}}">
+    <view class="boxz" wx:for="{{dataz}}" wx:key="index" catchtap="godel" data-id="{{index}}">
+        <image src="{{'http://192.168.32.114'+item.img}}" />
+        <view>{{item.name}}</view>
+    </view>
+</view> -->
+
+<view class="box" hidden="{{show}}">
+    <view class="boxz" wx:for="{{dataz}}" wx:key="index" catchtap="godel" data-id="{{index}}">
+        <image src="{{item.img}}" />
+        <view>{{item.name}}</view>
+    </view>
+</view>
+
+<view class="load" catchtap="loading">
+    加载更多
+</view>
+
+<view class="goTal" catchtap="goTal">
+    <image src="/images/icon/zzz.png" />
+    <view>蔷薇艺术学院</view>
+</view>
