@@ -1,2 +1,17 @@
-<!--pages/school/school.wxml-->
-<text>pages/school/school.wxml</text>
+<view class="school">
+  <view class="top">
+    <text class="title">蔷薇艺术学校</text><text>是一所具有现代化理念的专业艺术培训机构，目前下设三个校区</text>
+  </view>
+  <view wx:for="{{school.schoolAddress}}" class="top-title">{{item}}</view>
+	<view class="pic"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/1_03.png"></image></view>
+	<view wx:for="{{school.study}}" class="list">
+		<text class="title">{{item.name}}</text>
+		<text>{{item.content}}</text>
+		<text></text>
+	</view>
+	<view class="pic2"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/111.jpg"></image></view>
+	<view class="bottom">
+		<image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/zzz.png"/>
+		<text>蔷薇艺术学校</text>
+	</view>
+</view>

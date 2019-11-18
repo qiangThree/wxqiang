@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <view class="outBox">
 	<view class="topImg">
 		<image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img2/7.png"></image>
@@ -27,7 +26,3 @@
 		</view>
 	</form>
 </view>
-=======
-<!--pages/apply/apply.wxml-->
-<text>pages/apply/apply.wxml</text>
->>>>>>> six

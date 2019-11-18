@@ -1,2 +1,12 @@
-<!--pages/teacher/teacher.wxml-->
-<text>pages/teacher/teacher.wxml</text>
+<view class="teacher">
+	<view class="pic1"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/1.jpg"></image></view>
+	<view class="pic2"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/2.jpg"></image></view>
+	<view class="pic3"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/3.jpg"></image></view>
+	<view class="pic4"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4.jpg"></image></view>
+	<view class="pic5"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/5.jpg"></image></view>
+	<view class="pic6"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/6.jpg"></image></view>
+	<view class="bottom">
+		<image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/zzz.png"/>
+		<text>蔷薇艺术学校</text>
+	</view>
+</view>

@@ -33,11 +33,16 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"appid": "wxc469ebd000280fde",
 =======
 	"appid": "wx8d6dabe73e6f3e05",
 >>>>>>> six
 	"projectname": "qiangwei",
+=======
+	"appid": "wxfce2a87c957c84d3",
+	"projectname": "wxqiang",
+>>>>>>> 732c67432b1f93e69168a9d963222bacf9972ff0
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -61,6 +66,7 @@
 			"currentL": -1,
 			"list": []
 		},
+<<<<<<< HEAD
 		"gamePlugin": {
 			"current": -1,
 			"list": []
@@ -97,11 +103,21 @@
 					"name": "pages/special/special",
 					"pathName": "pages/special/special",
 >>>>>>> six
+=======
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/school/school",
+					"pathName": "pages/school/school",
+>>>>>>> 732c67432b1f93e69168a9d963222bacf9972ff0
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
@@ -114,6 +130,10 @@
 					"name": "pages/maps/maps",
 					"pathName": "pages/maps/maps",
 >>>>>>> six
+=======
+					"name": "pages/teacher/teacher",
+					"pathName": "pages/teacher/teacher",
+>>>>>>> 732c67432b1f93e69168a9d963222bacf9972ff0
 					"scene": null
 				}
 			]

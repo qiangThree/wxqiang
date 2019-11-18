@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!--pages/nine/nine.wxml-->
 <view class="nine">
     <view class="title">梦想值多少钱？9.9元圆宝宝一个明星梦</view>
@@ -85,7 +84,3 @@
     <view class="whatTime">常年招生，随叫随学</view>
 </view>
 <view class="goliu" bind:tap="goliu">写留言</view>
-=======
-<!--pages/nine/nine.wxml-->
-<text>pages/nine/nine.wxml</text>
->>>>>>> six

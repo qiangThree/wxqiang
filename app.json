@@ -57,7 +57,11 @@
     "pages/school/school",
     "pages/teacher/teacher",    
     "pages/nine/nine",
+<<<<<<< HEAD
     "pages/liulist/liulist"
+=======
+		"pages/liulist/liulist"
+>>>>>>> 732c67432b1f93e69168a9d963222bacf9972ff0
   ],
   "permission": {
     "scope.userLocation": {
