@@ -12,12 +12,12 @@ Page({
     wx.getLocation({
       type: 'gcj02',
       success (res) {
-        const latitude = 35.032874
-        const longitude = 118.445651
+        const latitude = 35.026674
+        const longitude = 118.439751
         wx.openLocation({
           latitude,
           longitude,
-          scale: 18
+          scale: 24
         })
       }
     })
@@ -28,7 +28,7 @@ Page({
     // })
     // console.log(this.data.dataz)
     wx.request({
-      url: 'http://192.168.32.114:8800/contact',
+      url: 'http://192.168.43.213:8800/contact',
       data: {},
       method: 'POST',
       success: (res)=>{

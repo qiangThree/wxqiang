@@ -4,11 +4,11 @@
 
 <view class="txt1">
     <view class="tit" catchtap="showMap">
-        <image src="/images/icon/go.png" />
+        <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/go.png" />
         <view>地图导航</view>
     </view>
     <view class="tit" open-type='contact' session-from='weapp'>
-        <image src="/images/icon/we_in.png" />
+        <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/we_in.png" />
         <view>在线查询</view>
     </view>
 </view>
@@ -22,6 +22,6 @@
 </block>
 
 <view class="goTal" catchtap="goTal">
-    <image src="/images/icon/zzz.png" />
+    <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/zzz.png" />
     <view>蔷薇艺术学院</view>
 </view>

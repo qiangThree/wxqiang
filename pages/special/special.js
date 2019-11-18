@@ -5,7 +5,7 @@ Page({
   },
   goTal(){
     wx.makePhoneCall({
-      phoneNumber: '03123688777',
+      phoneNumber: '17326577539',
     })
   },
   loading(){
@@ -32,7 +32,7 @@ Page({
     // })
     // console.log(this.data.dataz)
     wx.request({
-      url: 'http://192.168.32.114:8800/recommend',
+      url: 'http://192.168.43.213:8800/recommend',
       data: {},
       method: 'POST',
       success: (res)=>{
