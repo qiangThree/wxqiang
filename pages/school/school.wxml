@@ -7,6 +7,7 @@
 	<view wx:for="{{school.study}}" class="list">
 		<text class="title">{{item.name}}</text>
 		<text>{{item.content}}</text>
+		<text></text>
 	</view>
 	<view class="pic2"><image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/111.jpg"></image></view>
 	<view class="bottom">
