@@ -11,8 +11,11 @@
 		"newFeature": true,
 		"coverView": true,
 		"autoAudits": false,
+<<<<<<< HEAD
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+=======
+>>>>>>> five
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -54,17 +57,27 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": -1,
 			"list": [
 				{
 					"id": -1,
 					"name": "pages/apply/apply",
 					"pathName": "pages/apply/apply",
+=======
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "nine",
+					"pathName": "pages/nine/nine",
+>>>>>>> five
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
 					"query": "",
@@ -75,6 +88,10 @@
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
 					"query": "id=0",
+=======
+					"name": "liuyan",
+					"pathName": "pages/liulist/liulist",
+>>>>>>> five
 					"scene": null
 				}
 			]

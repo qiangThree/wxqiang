@@ -1,23 +1,29 @@
-// pages/nine/nine.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
+Page({
+  data:{
+    status:wx.getStorageSync("status")||false
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
+  onLoad(){
+    wx.request({
+      url:"http://192.168.43.213:8800/nine",
+      method:"post",
+      success:(res)=>{
+        console.log(res)
+        this.setData({
+          nine:res.data.nine
+        })
+      }
+    })
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  changeStatus(){
+    var status=!this.data.status
+    this.setData({
+      status:status
+    })
+    wx.setStorageSync("status",status);
+  },
+  goliu(){
+    wx.navigateTo({
+      url: '/pages/liulist/liulist'
+    });
   }
 })

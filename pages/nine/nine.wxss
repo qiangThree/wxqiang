@@ -1,1 +1,313 @@
 /* pages/nine/nine.wxss */
+.nine{
+    box-sizing:border-box;
+    width:100%;
+    padding:0 34rpx;
+}
+.title{
+    margin-top:50rpx;
+    font-size:42rpx;
+    line-height:62rpx;
+    letter-spacing:7rpx;
+}
+.titdate{
+    font-size:27rpx;
+    letter-spacing:6rpx;
+    color:#a8a8a8;
+    margin-top:10rpx;
+    margin-bottom:40rpx;
+}
+.guanzhu{
+    width:100%;
+    height:206rpx;
+    border-radius:20rpx;
+    box-shadow:0 0 10rpx #ccc;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.guanImg{
+    width:120rpx;
+    height:120rpx;
+}
+.guanCon{
+    height:140rpx;
+}
+.guanBig{
+    font-size:30rpx;
+    font-weight:bold;
+}
+.guanSmall{
+    font-size:26rpx;
+    color:#9e9e9e;
+    margin-top:30rpx;
+}
+.guanBtn{
+    width:120rpx;
+    height:60rpx;
+    line-height:60rpx;
+    text-align:center;
+    color:#fff;
+    border:2rpx solid #6cab50;
+    background:#aaea8b;
+    border-radius:10rpx;
+}
+.guanzhu .active{
+    background:#fff;
+    color:#aaea8b;
+    border:2rpx solid #6cab50;
+}
+.nineInfo{
+    letter-spacing:4rpx;
+    line-height:50rpx;
+    margin-top:26rpx;
+}
+.wxLink{
+    margin-top:110rpx;
+    width:100%;
+    height:734rpx;
+    border:1rpx solid #ececec;
+    margin-bottom:42rpx;
+}
+.linkTop{
+    margin-left:24rpx;
+    height:80rpx;
+    display:flex;
+    align-items:center;
+}
+.linkTop image{
+    width:50rpx;
+    height:50rpx;
+}
+.linkTop text{
+    font-size:28rpx;
+    color:#7c7c7c;
+    margin-left:10rpx;
+}
+.linkTit{
+    font-size:26rpx;
+    margin-left:24rpx;
+    margin-bottom:40rpx;
+}
+.linkBig{
+    height:484rpx;
+    width:628rpx;
+    margin-left:24rpx;
+    margin-bottom:24rpx;
+}
+.linkBottom{
+    width:100%;
+    height:60rpx;
+    display:flex;
+    align-items:center;
+    box-sizing: border-box;
+    padding-left:24rpx;
+    border-top:2rpx solid #ececec;
+}
+.linkBottom image{
+    width:30rpx;
+    height:26rpx;
+}
+.linkBottom text{
+    font-size:24rpx;
+    letter-spacing:4rpx;
+    margin-left:20rpx;
+    color:#7c7c7c;
+}
+.saoma{
+    width:100%;
+    text-align:center;
+}
+.saoTit{
+    margin-bottom:56rpx;
+    font-size:28rpx;
+    letter-spacing:8rpx;
+    width:100%;
+}
+.saoma image{
+    width:410rpx;
+    height:410rpx;
+    margin-bottom:66rpx;
+}
+.join{
+    font-size:28rpx;
+    letter-spacing:8rpx;
+    font-weight:bold;
+}
+.course{
+    margin-top:90rpx;
+    width:100%;
+}
+.courTit{
+    background:#f16600;
+    text-align:center;
+    margin:0 auto;
+    width:66%;
+    height:54rpx;
+    font-size:40rpx;
+    line-height:54rpx;
+    color:#fff;
+}
+.imgList{
+    margin-top:24rpx;
+    width:100%;
+}
+.imgList image{
+    width:100%;
+    height:276rpx;
+    margin-bottom:10rpx;
+}
+.courInfo{
+    text-align:center;
+    line-height:60rpx;
+    font-size:30rpx;
+    letter-spacing:6rpx;
+}
+.detailTit{
+    width:132rpx;
+    background:#f16600;
+    color:#fff;
+    font-size:30rpx;
+    margin-top:10rpx;
+    margin-bottom:10rpx;
+    text-align:center;
+}
+.courDetail view{
+    width:100%;
+    line-height:50rpx;
+    font-size:28rpx;
+    letter-spacing:6rpx;
+    margin-bottom:30rpx;
+}
+.courDetail image{
+    width:100%;
+    height:350rpx;
+    margin-bottom:10rpx;
+}
+.purpose{
+    margin-bottom:40rpx;
+}
+.purpose view{
+    line-height:60rpx;
+    font-size:30rpx;
+    letter-spacing:4rpx;
+}
+.admissions{
+    margin-top:30rpx;
+}
+.object{
+    font-size:28rpx;
+    line-height:50rpx;
+}
+.content{
+    font-size:28rpx;
+    line-height:50rpx;
+}
+.conditions{
+    margin-top:24rpx;
+    line-height:50rpx;
+}
+.school{
+    margin-top:30rpx;
+    width:100%;
+}
+.schoolTit{
+    margin:0 auto; 
+    width:500rpx;
+    text-align:center;
+    height:54rpx;
+    line-height:54rpx;
+    font-size:44rpx;
+    background:#f16600;
+    color:#fff;
+    margin-bottom:20rpx;
+}  
+.schoolInfo{
+    width:100%;
+    font-size:27rpx;
+    line-height:50rpx;
+}
+.schoolInfo span{
+    font-size:30rpx;
+    font-weight:bold;
+}   
+.imgBox{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.row{
+    display:flex;
+}
+.row image:nth-child(1){
+    width:400rpx;
+    margin:10rpx;
+}
+.row image:nth-child(2){
+    width:240rpx;
+    margin:10rpx;
+}
+.col{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    width:52%;
+    margin-right:3%;
+}
+.col image:nth-child(1){
+    width:100%;
+}     
+.col image:nth-child(2){
+    width:60%;
+    height:300rpx;
+    margin-top:10rpx;
+} 
+.col2{
+    display:flex;
+    flex-direction:column;
+    width:45%;
+}
+.col2 image:nth-child(1){
+    width:80%;
+    height:360rpx;
+}
+.col2 image:nth-child(2){
+    margin-top:10rpx;
+    width:100%;
+}
+.classTime{
+    width:132rpx;
+    background:#f16600;
+    color:#fff;
+    font-size:30rpx;
+    margin-top:66rpx;
+    margin-bottom:10rpx;
+    text-align:center;
+}
+.timelist view{
+    line-height:60rpx;
+    font-size:28rpx;
+    color:#f16600;
+    font-weight:bold;
+}
+.whatTime{
+    margin-top:20rpx;
+    height:44rpx;
+    width:380rpx;
+    text-align:center;
+    font-size:40rpx;
+    line-height:44rpx;
+    color:#ffffff;
+    background:#f16600;
+}
+.goliu{
+    height:164rpx;
+    line-height:164rpx;
+    width:100%;
+    color:#656c76;
+    text-align:center;
+    background:#f2f2f2;
+    letter-spacing:10rpx;
+    font-size:25rpx;
+    margin-top:60rpx;
+}

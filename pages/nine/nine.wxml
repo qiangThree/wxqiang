@@ -1,2 +1,86 @@
 <!--pages/nine/nine.wxml-->
-<text>pages/nine/nine.wxml</text>
+<view class="nine">
+    <view class="title">梦想值多少钱？9.9元圆宝宝一个明星梦</view>
+    <view class="titdate">蔷薇艺术中心   2018-06-14</view>
+    <view class="guanzhu">
+        <image class="guanImg" src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/zzz.png"></image>
+        <view class="guanCon">
+            <view class="guanBig">蔷薇艺术学校</view>
+            <view class="guanSmall">艺术改变生活</view>
+        </view>
+        <view class="guanBtn {{!status?'active':''}}" bind:tap="changeStatus">{{!status?'关注':'已关注'}}</view>
+    </view>
+    <view class="nineInfo">本次砍价的底价为9.9元，课程分为少儿模特和舞蹈，二选一，包含暑假班课程，赠送暑假之前的课程。</view>
+    <view class="wxLink">
+        <view class="linkTop">
+            <image class="linkImg" src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/3_01.png"></image>
+            <text>微砍价拼团</text>
+        </view>
+        <view class="linkTit">9.9元给孩子一个当明星的机会</view>
+        <image class="linkBig" src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/3_03.png"></image>
+        <view class="linkBottom">
+            <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/3_02.png" />
+            <text>小程序</text>
+        </view>
+    </view>
+    <view class="saoma">
+        <view class="saoTit">点击参与抢购</view>
+        <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/3_07.png" />
+        <view class="join">添加客服微信</view>
+    </view>
+    <view class="course" wx:for="{{nine.studyList}}" wx:key="{{index}}">
+        <view class="courTit">{{item.studyTitle}}</view>
+        <view class="imgList">
+            <image wx:for="{{item.imgList}}" wx:for-item="subitem" wx:for-index="subindex" wx:key="{{subindex}}" src="{{subitem}}" />
+        </view>
+        <view class="courInfo" wx:if="{{item.studyInfo}}">{{item.studyInfo}}</view>
+        <view class="detailTit">课程简介</view>
+        <view class="courDetail">
+            <view>{{item.introduce.text}}</view>
+            <image wx:for="{{item.introduce.imgs}}" wx:for-item="subitem" wx:for-index="subindex" wx:key="{{subindex}}" src="{{subitem}}" />
+        </view>
+        <view class="detailTit">培训目的</view>
+        <view class="purpose">
+            <view wx:for="{{item.purpose}}" wx:for-item="subitem" wx:for-index="subindex" wx:key="{{subindex}}">{{subitem}}</view>
+        </view>
+        <view class="detailTit">招生条件</view>
+        <view class="admissions">
+            <view class="object">招生对象：{{item.admissions.object}}</view>
+            <view class="content" wx:if="{{item.admissions.content}}">{{item.admissions.content}}</view>
+            <view class="conditions" wx:if="{{item.admissions.conditions}}">
+                <view wx:for="{{item.admissions.conditions}}" wx:for-item="subitem" wx:for-index="subindex" wx:key="{{subindex}}">{{subitem}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="school">
+        <view class="schoolTit">《蔷薇艺术学校简介》</view>
+        <view class="schoolInfo"><span>蔷薇艺术学校</span>是一所具有现代理念的专业艺术培训机构，学校位于山东省临沂市经济开发区路与沃尔沃路交汇东500米路北(长安小学对过)。</view>
+        <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/1_03.png" alt=""/>
+        <view class="schoolInfo"><text>教学理念：</text>倡导：“快乐，健康，科学”的教学理念，使孩子获得优美的体态，高雅的气质，提高自信心和表现力，在快乐的学习中真正做到孩子身心的全面培养</view>
+        <view class="schoolInfo"><text>开设课程：</text>舞蹈，少儿模特</view>
+        <view class="schoolInfo"><text>报名条件：</text>学习进步，品质优良，学习能力强的艺术爱好者均可报名</view>
+        <view class="schoolInfo"><text>微信电话：</text>18660914666</view>
+        <view class="imgBox">
+            <view class="row">
+                <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4_06.png" alt=""/>
+                <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4_04.png" alt=""/>
+            </view>
+            <view class="col">
+                <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4_10.png" alt=""/>
+                <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4_19.png" alt=""/>
+            </view>
+            <view class="col2">
+                <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4_13.png" alt=""/>
+                <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img/4_16.png" alt=""/>
+            </view>
+        </view>
+    </view>
+    <view class="classTime">上课时间</view>
+    <view class="timelist">
+        <view>周六</view>
+        <view>周日</view>
+        <view>暑假</view>
+    </view>
+    <view class="whatTime">常年招生，随叫随学</view>
+</view>
+<view class="goliu" bind:tap="goliu">写留言</view>
