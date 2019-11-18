@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "pages": [
     "pages/index/index",
@@ -17,63 +16,11 @@
     "navigationBarTitleText": "蔷薇艺术学校",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "网站首页",
-        "iconPath": "images/icon/index.png",
-        "selectedIconPath": "images/icon/index2.png"
-      },
-      {
-        "pagePath": "pages/special/special",
-        "text": "课程推荐",
-        "iconPath": "images/icon/time.png",
-        "selectedIconPath": "images/icon/time2.png"
-      },
-      {
-        "pagePath": "pages/apply/apply",
-        "text": "在线报名",
-        "iconPath": "images/icon/bao.png",
-        "selectedIconPath": "images/icon/bao2.png"
-      },
-      {
-        "pagePath": "pages/maps/maps",
-        "text": "联系我们",
-        "iconPath": "images/icon/maps.png",
-        "selectedIconPath": "images/icon/maps2.png"
-      }
-    ]
-  }
-=======
-{
-  "pages": [
-    "pages/index/index",
-    "pages/detail/detail",
-    "pages/apply/apply",
-    "pages/special/special",
-    "pages/maps/maps", 
-    "pages/school/school",
-    "pages/teacher/teacher",    
-    "pages/nine/nine",
-<<<<<<< HEAD
-    "pages/liulist/liulist"
-=======
-		"pages/liulist/liulist"
->>>>>>> 732c67432b1f93e69168a9d963222bacf9972ff0
-  ],
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#606370",
-    "navigationBarTitleText": "蔷薇艺术学校",
-    "navigationBarTextStyle": "white"
-  },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "list": [
@@ -103,5 +50,4 @@
       }
     ]
   }
->>>>>>> six
 }
