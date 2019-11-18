@@ -1,2 +1,28 @@
-<!--pages/apply/apply.wxml-->
-<text>pages/apply/apply.wxml</text>
+<view class="outBox">
+	<view class="topImg">
+		<image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/img2/7.png"></image>
+	</view>
+	<form bindsubmit="formSubmit">
+		<view class="section">
+		    <view class="section__title"><text>*</text>宝贝姓名</view>
+		    <input name="input1"/>
+		</view>
+		<view class="section">
+		    <view class="section__title"><text>*</text>联系方式</view>
+		    <input name="input2"/>
+		</view>
+		<view class="section">
+		    <view class="section__title"><text>*</text>年龄</view>
+		    <input name="input3"/>
+		</view>
+		<view class="section section_gap">
+		    <view class="section__title"><text>*</text>课程精选</view>
+		    <checkbox-group name="checkbox">
+		      <label wx:for="{{checkList}}" wx:key="{{index}}"><checkbox value="checkbox {{index}}"/>{{item}}</label>
+		    </checkbox-group>
+		</view>
+		<view class="btn-area">
+		<button formType="submit">提交</button>
+		</view>
+	</form>
+</view>

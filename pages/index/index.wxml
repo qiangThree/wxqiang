@@ -1,13 +1,37 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!-- 首页 -->
+<view class="bigBox">
+    <swiper class="" indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="2500">
+      <block wx:for="{{imgList}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}"/>
+		  <text>{{item}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="toNext">
+      <view wx:for="{{toNext}}" wx:key="{{index}}" data-id="{{index}}" bind:tap="toNext">
+        <image src="{{item.pic}}"/>
+        <text class="title">{{item.txt}}</text>
+      </view>
+    </view>
+    <view class="more">
+		<view class="laB"><image src="{{other.laB}}"></image></view>
+		<text>终于等到你，还好我没放弃！18660914666</text>
+	</view>
+	<view class="summer" bind:tap="toNine">
+		<image src="{{other.nine}}"></image>
+	</view>
+	<view class="course">
+		<view class="top">课程推荐<text>MORE</text></view>
+		<view class="content">
+			<view class="someOne" wx:for="{{keList}}" wx:key="{{index}}" data-id="{{index}}" bind:tap="toDetail">
+				<image src="{{item.pic}}"></image>
+				<text>{{item.txt}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="video">
+		<image src="{{other.video}}"></image>
+	</view>
 </view>

@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+	httpTitle:'http://192.168.32.114',
+	severTitle:'http://192.168.43.213'
   }
 })
