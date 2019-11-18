@@ -1,7 +1,11 @@
-// var aaa = require('../../data.js')
 Page({
   data: {
-    show:false
+    show:false,
+    marker:[{
+      id: 0,
+      latitude: 35.026674,
+      longitude: 118.439751
+    }]
   },
   goTal(){
     wx.makePhoneCall({
@@ -15,7 +19,7 @@ Page({
         wx.openLocation({
           latitude:35.026674,
           longitude:118.439751,
-          scale: 24
+          scale: 30
         })
       }
     })
