@@ -9,8 +9,8 @@
 	<image src="{{conList.conImg}}" class="twiceImg"></image>
 	<view wx:for="{{conList.listData}}" wx:key="{{index}}">
 		<view class="topTitle {{index+1==conList.listData.length}}?'lastTitle':''">{{item.title}}</view>
-		<view class="txtCon" wx:if="{{item.txt}}" wx:for="{{item.txt}}" wx:key="{{index}}">
-			{{item}}
+		<view class="txtCon" wx:if="{{item.txt}}" wx:for="{{item.txt}}" wx:key="{{aIndex}}" wx:for-item="aItem" wx:for-index="aIndex">
+			{{aItem}}
 		</view>
 	</view>
 </view>
