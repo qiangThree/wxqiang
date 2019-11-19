@@ -1,16 +1,18 @@
-<view class="outBox">
-	<image src="{{conList.topImg}}" class="topImg"></image>
-	<view>
-		<view class="topTitle">课程推荐</view>
-		<view class="txtCon">
-			{{conList.txt}}
-		</view>
-	</view>
-	<image src="{{conList.conImg}}" class="twiceImg"></image>
-	<view wx:for="{{conList.listData}}" wx:key="{{index}}">
-		<view class="topTitle {{index+1==conList.listData.length}}?'lastTitle':''">{{item.title}}</view>
-		<view class="txtCon" wx:if="{{item.txt}}" wx:for="{{item.txt}}" wx:key="{{aIndex}}" wx:for-item="aItem" wx:for-index="aIndex">
-			{{aItem}}
-		</view>
-	</view>
+<view class="big">
+  <view class="outBox">
+    <image src="{{conList.topImg}}" class="topImg"></image>
+    <view>
+      <view class="topTitle">课程推荐</view>
+      <view class="contentTxt">
+        {{conList.txt}}
+      </view>
+    </view>
+    <image src="{{conList.conImg}}" class="twiceImg"></image>
+    <view wx:for="{{conList.listData}}" wx:key="{{index}}">
+      <view class="topTitle {{index+1==conList.listData.length}}?'lastTitle':''">{{item.title}}</view>
+      <view class="txtCon" wx:if="{{item.txt}}" wx:for="{{item.txt}}" wx:key="{{aIndex}}" wx:for-item="aItem" wx:for-index="aIndex">
+        {{aItem}}
+      </view>
+    </view>
+  </view>
 </view>
