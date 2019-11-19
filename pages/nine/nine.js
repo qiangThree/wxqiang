@@ -1,8 +1,9 @@
 Page({
   data:{
-    status:wx.getStorageSync("status")||false
+    status:false
   },
   onLoad(){
+    var isTrue=wx.getStorageSync("status")||false
     wx.request({
       url:"http://192.168.43.213:8800/nine",
       method:"post",
@@ -13,13 +14,16 @@ Page({
         })
       }
     })
+    this.setData({
+      status: isTrue
+    })
   },
   changeStatus(){
-    var status=!this.data.status
+    var isTrue2=!this.data.status
     this.setData({
-      status:status
+      status:isTrue2
     })
-    wx.setStorageSync("status",status);
+    wx.setStorageSync("status",isTrue2);
   },
   goliu(){
     wx.navigateTo({

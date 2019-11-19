@@ -1,5 +1,10 @@
 <view class="map">
-    <image src="/images/maps.png" />
+    <map id="myMap"
+    markers="{{marker}}"
+    style="width:100%;height:100%"
+    longitude="118.439751"
+    latitude="35.026674" scale='16'>
+    </map>
 </view>
 
 <view class="txt1">

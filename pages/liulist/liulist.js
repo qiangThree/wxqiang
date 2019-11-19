@@ -3,10 +3,13 @@ Page({
   data: {
     isTrue:false,
     textVal:"",
-    liulist:wx.getStorageSync("list")||[]
+    liulist:[]
   },
   onLoad: function (options) {
-
+    var arrlist = wx.getStorageSync("list")||[]
+    this.setData({
+      liulist:arrlist
+    })
   },
   change(e){
     console.log(e.detail.value)
