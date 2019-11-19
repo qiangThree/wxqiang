@@ -52,6 +52,17 @@ page{
     color:white;
     padding-left:10rpx;
 }
+.txt1 .tit button {
+    padding:0;
+    padding-left:10rpx;
+    margin:0;
+    font-size:24rpx;
+    background:rgba(0,0,0,0);
+    color:white;
+}
+.txt1 .tit button::after{
+    border:none;
+}
 .txt2{
     width:700rpx;
     height:80rpx;

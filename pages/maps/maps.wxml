@@ -12,9 +12,10 @@
         <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/go.png" />
         <view>地图导航</view>
     </view>
-    <view class="tit" open-type='contact' session-from='weapp'>
+    
+    <view class="tit" >
         <image src="https://raw.githubusercontent.com/ZhangCheng1416/zhang/master/images/icon/we_in.png" />
-        <view>在线查询</view>
+        <button open-type='contact'>在线查询</button>
     </view>
 </view>
 
